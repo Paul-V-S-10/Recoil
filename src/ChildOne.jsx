@@ -26,6 +26,11 @@ const ChildOne = () => {
   const onChange = ({ target: { value } }) => {
     setInputValue(value);
   };
+  
+  // const onChange = (e) => {
+  //   console.log(e);
+  //   setInputValue(e.target.value);
+  // };
   return (
     <div>
       <input type="text" value={inputValue} onChange={onChange} />
